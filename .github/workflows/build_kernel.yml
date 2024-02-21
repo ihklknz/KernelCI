@@ -194,9 +194,7 @@ jobs:
           echo "args=$args" >> $GITHUB_OUTPUT
 
       - name: "Update KernelSU"
-        working-directory: ${{ env.KERNEL_NAME }}
-        env:
-          arch: ${{ steps.generate-args.outputs.ARCH }}
+        working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
         if: ${{ env.withKernelSU == 'true' }}
         run: |
           if [ -d "./KernelSU" ]; then
@@ -207,6 +205,12 @@ jobs:
           fi
 
           curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+
+          echo -e "\nCONFIG_KPROBES=y" >> ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo -e "\nCONFIG_HAVE_KPROBES=y" >> ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo -e "\nCONFIG_KPROBE_EVENTS=y" >> ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
+
+          cat ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
 
       - name: Set Git Config
         run: |
