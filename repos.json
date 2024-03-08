@@ -11,7 +11,7 @@
     "toolchains": [
       {
         "repo": "https://gitlab.com/anandhan07/aosp-clang",
-        "branch": "clang-17",
+        "branch": "17",
         "name": "aosp-clang",
         "binPath": ["bin"]
       }
