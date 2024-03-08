@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "mashiro",
       "repo": "https://github.com/ihklknz/kernel_xiaomi_sdm845-4.9",
-      "branch": "14",
+      "branch": "fourteen",
       "device": "beryllium",
       "defconfig": "beryllium_defconfig"
   },
