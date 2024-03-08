@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "mashiro",
-      "repo": "https://github.com/nekoprjkt/kernel-xiaomi-vince",
+      "repo": "https://github.com/ihklknz/kernel_xiaomi_sdm845-4.9",
       "branch": "14",
-      "device": "vince",
-      "defconfig": "vince-perf_defconfig"
+      "device": "beryllium",
+      "defconfig": "beryllium_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
