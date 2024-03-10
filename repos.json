@@ -2,16 +2,16 @@
   {
     "kernelSource": {
       "name": "mashiro",
-      "repo": "https://github.com/ihklknz/kernel_xiaomi_sdm845-4.9",
-      "branch": "fourteen",
-      "device": "beryllium",
-      "defconfig": "beryllium_defconfig"
+      "repo": "https://github.com/ihklknz/kernel_mido_4.19",
+      "branch": "rosy-wip",
+      "device": "rosy",
+      "defconfig": "vendor/xiaomi/msm8937-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/anandhan07/aosp-clang",
-        "branch": "17",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
         "name": "aosp-clang",
         "binPath": ["bin"]
       }
