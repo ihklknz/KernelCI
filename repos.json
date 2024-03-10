@@ -5,7 +5,7 @@
       "repo": "https://github.com/ihklknz/kernel_mido_4.19",
       "branch": "rosy-wip",
       "device": "rosy",
-      "defconfig": "vendor/xiaomi/msm8937-perf_defconfig"
+      "defconfig": "msm8937-perf_defconfig"
   },
     "withKernelSU": false,
     "toolchains": [
