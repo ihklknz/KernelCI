@@ -3,8 +3,10 @@
     "kernelSource": {
       "name": "hklknz",
       "repo": "https://github.com/diphons/sdm845-419",
+      "repo": "https://github.com/Beryllium-4-19-Project/kernel_techpack_mi845",
       "branch": "main",
       "device": "beryllium",
+      "device": "beryllium/techpack/mi845",
       "defconfig": "vendor/sdm845-perf_defconfig vendor/xiaomi/beryllium.defconfig"
   },
     "withKernelSU": false,
